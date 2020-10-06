@@ -179,7 +179,7 @@ body {
 }
 .attribution {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.5%;
     color: hsl(229, 7%, 55%);
     left: 50%;
     transform: translate(-50%, 0);
@@ -187,4 +187,44 @@ body {
 .attribution a:link, .attribution a:visited {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    #root {
+        background-image: url('./images/bg-mobile.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .index, .data-storage-container {
+       width: 87%;
+       margin: 0 auto;
+    }
+    .index {
+        margin-bottom: 15px;
+    }
+    .root-container {
+        height: auto;
+        width: 100%;
+    }
+    .speech-bubble {
+        border-radius: 10px;
+        top: 140px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .speech-bubble:after {
+        content: none;
+    }
+    .gb-left-message {
+        text-align: center;
+    }
+    .data-storage-content {
+        width: 80%;
+    }
+    .bubble-content-small, .start-gb, .end-gb {
+        font-size: 15px;
+    }
+    .attribution {
+        width: 100%;
+    }
 }
